@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BlueOS — a Blue Archive themed Android ROM for Pixel 6a (LineageOS 24, Android 17)</title>
+<meta name="description" content="BlueOS by GDmio is a free fan-made custom ROM based on LineageOS 24 (Android 17) and inspired by Blue Archive: live halo clock, live widgets, Arona and Plana on the lock screen. Pixel 6a, Pixel 6, Pixel 6 Pro, Galaxy S20 FE and a GSI.">
+<meta name="author" content="GDmio">
+<link rel="canonical" href="https://gdmio.github.io/BlueOS/">
+<link rel="alternate" hreflang="en" href="https://gdmio.github.io/BlueOS/">
+<link rel="alternate" hreflang="ru" href="https://gdmio.github.io/BlueOS/ru/">
+<link rel="alternate" hreflang="x-default" href="https://gdmio.github.io/BlueOS/">
+<link rel="icon" href="img/icon.png">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BlueOS">
+<meta property="og:title" content="BlueOS — a Blue Archive themed Android ROM for Pixel 6a (LineageOS 24, Android 17)">
+<meta property="og:description" content="BlueOS by GDmio is a free fan-made custom ROM based on LineageOS 24 (Android 17) and inspired by Blue Archive: live halo clock, live widgets, Arona and Plana on the lock screen. Pixel 6a, Pixel 6, Pixel 6 Pro, Galaxy S20 FE and a GSI.">
+<meta property="og:url" content="https://gdmio.github.io/BlueOS/">
+<meta property="og:image" content="https://gdmio.github.io/BlueOS/img/og.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "BlueOS", "alternateName": ["BlueOS ROM", "BlueOS Blue Archive ROM", "BlueOS GDmio"], "applicationCategory": "OperatingSystem", "operatingSystem": "Android 17 (LineageOS 24.0)", "softwareVersion": "0.8.1", "description": "BlueOS by GDmio is a free fan-made custom ROM based on LineageOS 24 (Android 17) and inspired by Blue Archive: live halo clock, live widgets, Arona and Plana on the lock screen. Pixel 6a, Pixel 6, Pixel 6 Pro, Galaxy S20 FE and a GSI.", "url": "https://gdmio.github.io/BlueOS/", "image": "https://gdmio.github.io/BlueOS/img/og.png", "downloadUrl": "https://github.com/GDmio/BlueOS/releases", "license": "https://github.com/GDmio/BlueOS/blob/main/LICENSE", "inLanguage": ["en", "ru"], "author": {"@type": "Person", "name": "GDmio", "url": "https://github.com/GDmio"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "sameAs": ["https://github.com/GDmio/BlueOS", "https://t.me/BlueOSfirmware"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this vivo's BlueOS or Blue Robotics' BlueOS?", "acceptedAnswer": {"@type": "Answer", "text": "No. This BlueOS is a fan-made Android ROM by GDmio, inspired by the game Blue Archive. It only shares the name with those projects."}}, {"@type": "Question", "name": "Is BlueOS official Blue Archive software?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is an unofficial fan project, not affiliated with Nexon, Yostar or NEXON Games."}}, {"@type": "Question", "name": "Does it have Google Play?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, Google apps (MindTheGapps) are built in."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The ROM and its sources are free; see the licence in the repository."}}, {"@type": "Question", "name": "Where are the news and new versions?", "acceptedAnswer": {"@type": "Answer", "text": "In the Telegram channel <a href=\"https://t.me/BlueOSfirmware\">t.me/BlueOSfirmware</a> and on the <a href=\"https://github.com/GDmio/BlueOS/releases\">releases page</a>."}}]}</script>
+<style>
+:root{--bg:#f4f8ff;--card:#fff;--ink:#16233a;--mute:#4a5873;--acc:#128afa;--line:#dce5f2}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1420;--card:#152033;--ink:#e8eefa;--mute:#a7b4cc;--acc:#4ea8ff;--line:#26344c}
+ .logo{filter:invert(1) hue-rotate(180deg) brightness(1.1)}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 48px}
+a{color:var(--acc)}
+.top{display:flex;justify-content:flex-end;font-size:14px}
+header{text-align:center;padding:24px 0 8px}
+.logo{width:min(320px,70vw);height:auto}
+h1{position:absolute;left:-9999px}
+.tag{font-size:clamp(20px,4vw,28px);margin:8px 0 4px}
+.sub{color:var(--mute);margin:0 auto 20px;max-width:640px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.btn.main{background:var(--acc);border-color:var(--acc);color:#fff}
+section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-top:20px}
+h2{font-size:21px;margin:0 0 12px}
+ul{margin:0;padding-left:20px}li{margin:4px 0}
+.dev{list-style:none;padding:0}.dev li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.dev li:last-child{border:0}.dev span{color:var(--mute);font-size:14px}
+.shots{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+figure{margin:0;flex:0 0 160px;scroll-snap-align:start;text-align:center}
+figure img{width:160px;height:auto;border-radius:14px;border:1px solid var(--line);display:block}
+figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+.note{font-size:13px;color:var(--mute);margin:8px 0 0}
+details{border-bottom:1px solid var(--line);padding:10px 0}details:last-child{border:0}
+summary{cursor:pointer;font-weight:600}details p{margin:8px 0 0;color:var(--mute)}
+.warn{font-size:14px;color:var(--mute)}
+footer{text-align:center;font-size:13px;color:var(--mute);margin-top:28px}
+</style>
+</head>
+<body>
+<main>
+<div class="top"><a href="ru/" hreflang="ru">Русский</a></div>
+<header>
+<img class="logo" src="img/logo.svg" width="320" height="140" alt="BlueOS">
+<h1>BlueOS — A fan-made Android ROM inspired by Blue Archive</h1>
+<p class="tag">A fan-made Android ROM inspired by <b>Blue Archive</b></p>
+<p class="sub">Based on LineageOS 24.0 (Android 17), with Google Play built in. Free and open source, by GDmio.</p>
+<div class="btns"><a class="btn main" href="https://github.com/GDmio/BlueOS/releases/latest">Download</a><a class="btn" href="https://github.com/GDmio/BlueOS">Source code on GitHub</a><a class="btn" href="https://t.me/BlueOSfirmware">Telegram channel</a></div>
+</header>
+<section><h2>What it has</h2><ul><li>Its own logo, boot animation, fonts and sounds</li><li>A live halo over the lock-screen clock, Moe pixel clocks</li><li>Live widgets that look good together, with a music equalizer</li><li>«Colors»: every detail takes its colour from your wallpaper by its role</li><li>Live weather and an equalizer drawn right on the wallpaper</li><li>Arona or Plana live on the lock screen and in a widget: she reacts to touches, the phone's motion and notifications*</li></ul></section>
+<section><h2>Phones</h2><ul class="dev"><li><a href="https://github.com/GDmio/BlueOS/releases/latest">Google Pixel 6a (bluejay)</a><span>main phone</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-oriole">Google Pixel 6 (oriole)</a><span>checked by testers</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-raven">Google Pixel 6 Pro (raven)</a><span>checked by testers</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-r8q">Samsung Galaxy S20 FE, Snapdragon (r8q)</a><span>checked by testers</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-gsi-treble">Other phones: GSI on TrebleDroid</a><span>experimental</span></li></ul><p class="note">How to install: <a href="https://github.com/GDmio/BlueOS/blob/main/INSTALL.md">INSTALL.md</a>. Build it yourself: <a href="https://github.com/GDmio/BlueOS/blob/main/BUILDING.md">BUILDING.md</a>.</p></section>
+<section><h2>Screenshots</h2><div class="shots"><figure><img src="img/lock-plana.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Plana and the live clock"><figcaption>Plana and the live clock*</figcaption></figure><figure><img src="img/home-widgets.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Widgets and the equalizer"><figcaption>Widgets and the equalizer</figcaption></figure><figure><img src="img/lock-arona.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Arona on the lock screen"><figcaption>Arona on the lock screen*</figcaption></figure><figure><img src="img/home-plana.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Plana in the widget"><figcaption>Plana in the widget*</figcaption></figure><figure><img src="img/lock-moe.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Moe pixel clock"><figcaption>Moe pixel clock*</figcaption></figure><figure><img src="img/home-arona.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Arona in the widget"><figcaption>Arona in the widget*</figcaption></figure><figure><img src="img/about.jpg" width="160" height="356" loading="lazy" alt="BlueOS: About phone"><figcaption>About phone</figcaption></figure></div><p class="note">* The character and the wallpaper are not part of the ROM.</p></section>
+<section><h2>Game files</h2><p style="margin:0">BlueOS contains <b>no game files</b>: no character models, voices, music or wallpapers from the game. The ROM works fully without them. You can add your own files right on the phone (Wallpaper &amp; style → Character → Character files). Where to get them: the link in the description of the author's TikTok profile, <a href="https://www.tiktok.com/@chozadaun">tiktok.com/@chozadaun</a>.</p></section>
+<section><h2>Questions</h2><details><summary>Is this vivo's BlueOS or Blue Robotics' BlueOS?</summary><p>No. This BlueOS is a fan-made Android ROM by GDmio, inspired by the game Blue Archive. It only shares the name with those projects.</p></details><details><summary>Is BlueOS official Blue Archive software?</summary><p>No. It is an unofficial fan project, not affiliated with Nexon, Yostar or NEXON Games.</p></details><details><summary>Does it have Google Play?</summary><p>Yes, Google apps (MindTheGapps) are built in.</p></details><details><summary>Is it free?</summary><p>Yes. The ROM and its sources are free; see the licence in the repository.</p></details><details><summary>Where are the news and new versions?</summary><p>In the Telegram channel <a href="https://t.me/BlueOSfirmware">t.me/BlueOSfirmware</a> and on the <a href="https://github.com/GDmio/BlueOS/releases">releases page</a>.</p></details></section>
+<p class="warn">⚠️ No warranty. Installing any custom ROM wipes the phone and needs an unlocked bootloader. Some apps may not work (tap to pay, some banking apps).</p>
+<footer>BlueOS by GDmio · based on LineageOS · not affiliated with Nexon, Yostar or NEXON Games.</footer>
+</main>
+</body>
+</html>

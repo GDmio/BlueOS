@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gdmio.github.io/BlueOS/sitemap.xml

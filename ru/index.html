@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BlueOS — прошивка в стиле Blue Archive для Pixel 6a (LineageOS 24, Android 17)</title>
+<meta name="description" content="BlueOS от GDmio — бесплатная фанатская прошивка на LineageOS 24 (Android 17) в стиле Blue Archive: живой нимб на часах, живые виджеты, Арона и Плана на экране блокировки. Pixel 6a, Pixel 6, Pixel 6 Pro, Galaxy S20 FE и GSI.">
+<meta name="author" content="GDmio">
+<link rel="canonical" href="https://gdmio.github.io/BlueOS/ru/">
+<link rel="alternate" hreflang="en" href="https://gdmio.github.io/BlueOS/">
+<link rel="alternate" hreflang="ru" href="https://gdmio.github.io/BlueOS/ru/">
+<link rel="alternate" hreflang="x-default" href="https://gdmio.github.io/BlueOS/">
+<link rel="icon" href="../img/icon.png">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BlueOS">
+<meta property="og:title" content="BlueOS — прошивка в стиле Blue Archive для Pixel 6a (LineageOS 24, Android 17)">
+<meta property="og:description" content="BlueOS от GDmio — бесплатная фанатская прошивка на LineageOS 24 (Android 17) в стиле Blue Archive: живой нимб на часах, живые виджеты, Арона и Плана на экране блокировки. Pixel 6a, Pixel 6, Pixel 6 Pro, Galaxy S20 FE и GSI.">
+<meta property="og:url" content="https://gdmio.github.io/BlueOS/ru/">
+<meta property="og:image" content="https://gdmio.github.io/BlueOS/img/og.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "BlueOS", "alternateName": ["BlueOS ROM", "BlueOS Blue Archive ROM", "BlueOS GDmio"], "applicationCategory": "OperatingSystem", "operatingSystem": "Android 17 (LineageOS 24.0)", "softwareVersion": "0.8.1", "description": "BlueOS от GDmio — бесплатная фанатская прошивка на LineageOS 24 (Android 17) в стиле Blue Archive: живой нимб на часах, живые виджеты, Арона и Плана на экране блокировки. Pixel 6a, Pixel 6, Pixel 6 Pro, Galaxy S20 FE и GSI.", "url": "https://gdmio.github.io/BlueOS/ru/", "image": "https://gdmio.github.io/BlueOS/img/og.png", "downloadUrl": "https://github.com/GDmio/BlueOS/releases", "license": "https://github.com/GDmio/BlueOS/blob/main/LICENSE", "inLanguage": ["en", "ru"], "author": {"@type": "Person", "name": "GDmio", "url": "https://github.com/GDmio"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "sameAs": ["https://github.com/GDmio/BlueOS", "https://t.me/BlueOSfirmware"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Это BlueOS от vivo или от Blue Robotics?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Эта BlueOS — фанатская прошивка для Android от GDmio, вдохновлённая игрой Blue Archive. С теми проектами у неё только общее название."}}, {"@type": "Question", "name": "Это официальная прошивка Blue Archive?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Это неофициальный фанатский проект, он не связан с Nexon, Yostar и NEXON Games."}}, {"@type": "Question", "name": "Google Play есть?", "acceptedAnswer": {"@type": "Answer", "text": "Да, сервисы Google (MindTheGapps) встроены."}}, {"@type": "Question", "name": "Это бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Прошивка и исходники бесплатны, лицензия — в репозитории."}}, {"@type": "Question", "name": "Где новости и новые версии?", "acceptedAnswer": {"@type": "Answer", "text": "В Telegram-канале <a href=\"https://t.me/BlueOSfirmware\">t.me/BlueOSfirmware</a> и на <a href=\"https://github.com/GDmio/BlueOS/releases\">странице релизов</a>."}}]}</script>
+<style>
+:root{--bg:#f4f8ff;--card:#fff;--ink:#16233a;--mute:#4a5873;--acc:#128afa;--line:#dce5f2}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1420;--card:#152033;--ink:#e8eefa;--mute:#a7b4cc;--acc:#4ea8ff;--line:#26344c}
+ .logo{filter:invert(1) hue-rotate(180deg) brightness(1.1)}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 48px}
+a{color:var(--acc)}
+.top{display:flex;justify-content:flex-end;font-size:14px}
+header{text-align:center;padding:24px 0 8px}
+.logo{width:min(320px,70vw);height:auto}
+h1{position:absolute;left:-9999px}
+.tag{font-size:clamp(20px,4vw,28px);margin:8px 0 4px}
+.sub{color:var(--mute);margin:0 auto 20px;max-width:640px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.btn.main{background:var(--acc);border-color:var(--acc);color:#fff}
+section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-top:20px}
+h2{font-size:21px;margin:0 0 12px}
+ul{margin:0;padding-left:20px}li{margin:4px 0}
+.dev{list-style:none;padding:0}.dev li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.dev li:last-child{border:0}.dev span{color:var(--mute);font-size:14px}
+.shots{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+figure{margin:0;flex:0 0 160px;scroll-snap-align:start;text-align:center}
+figure img{width:160px;height:auto;border-radius:14px;border:1px solid var(--line);display:block}
+figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+.note{font-size:13px;color:var(--mute);margin:8px 0 0}
+details{border-bottom:1px solid var(--line);padding:10px 0}details:last-child{border:0}
+summary{cursor:pointer;font-weight:600}details p{margin:8px 0 0;color:var(--mute)}
+.warn{font-size:14px;color:var(--mute)}
+footer{text-align:center;font-size:13px;color:var(--mute);margin-top:28px}
+</style>
+</head>
+<body>
+<main>
+<div class="top"><a href="../" hreflang="en">English</a></div>
+<header>
+<img class="logo" src="../img/logo.svg" width="320" height="140" alt="BlueOS">
+<h1>BlueOS — Фанатская прошивка для Android в стиле Blue Archive</h1>
+<p class="tag">Фанатская прошивка для Android в стиле <b>Blue Archive</b></p>
+<p class="sub">Основана на LineageOS 24.0 (Android 17), Google Play встроен. Бесплатно, исходники открыты. Автор — GDmio.</p>
+<div class="btns"><a class="btn main" href="https://github.com/GDmio/BlueOS/releases/latest">Скачать</a><a class="btn" href="https://github.com/GDmio/BlueOS">Исходники на GitHub</a><a class="btn" href="https://t.me/BlueOSfirmware">Канал в Telegram</a></div>
+</header>
+<section><h2>Что в ней есть</h2><ul><li>Свой логотип, анимация загрузки, шрифты и звуки</li><li>Живой нимб над часами на экране блокировки, пиксельные часы Moe</li><li>Живые виджеты в одном стиле, с эквалайзером музыки</li><li>«Цвета»: каждая деталь берёт цвет из обоев по своей роли</li><li>Живая погода и эквалайзер прямо на обоях</li><li>Арона или Плана живут на экране блокировки и в виджете: отвечают на касания, движение телефона и уведомления*</li></ul></section>
+<section><h2>Телефоны</h2><ul class="dev"><li><a href="https://github.com/GDmio/BlueOS/releases/latest">Google Pixel 6a (bluejay)</a><span>основной телефон</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-oriole">Google Pixel 6 (oriole)</a><span>проверили тестеры</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-raven">Google Pixel 6 Pro (raven)</a><span>проверили тестеры</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-r8q">Samsung Galaxy S20 FE на Snapdragon (r8q)</a><span>проверили тестеры</span></li><li><a href="https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-gsi-treble">Другие телефоны: GSI на TrebleDroid</a><span>экспериментально</span></li></ul><p class="note">Как установить: <a href="https://github.com/GDmio/BlueOS/blob/main/INSTALL.ru.md">INSTALL.ru.md</a>. Собрать самому: <a href="https://github.com/GDmio/BlueOS/blob/main/BUILDING.ru.md">BUILDING.ru.md</a>.</p></section>
+<section><h2>Скриншоты</h2><div class="shots"><figure><img src="../img/lock-plana.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Плана и живые часы"><figcaption>Плана и живые часы*</figcaption></figure><figure><img src="../img/home-widgets.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Виджеты и эквалайзер"><figcaption>Виджеты и эквалайзер</figcaption></figure><figure><img src="../img/lock-arona.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Арона на экране блокировки"><figcaption>Арона на экране блокировки*</figcaption></figure><figure><img src="../img/home-plana.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Плана в виджете"><figcaption>Плана в виджете*</figcaption></figure><figure><img src="../img/lock-moe.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Пиксельные часы Moe"><figcaption>Пиксельные часы Moe*</figcaption></figure><figure><img src="../img/home-arona.jpg" width="160" height="356" loading="lazy" alt="BlueOS: Арона в виджете"><figcaption>Арона в виджете*</figcaption></figure><figure><img src="../img/about.jpg" width="160" height="356" loading="lazy" alt="BlueOS: О телефоне"><figcaption>О телефоне</figcaption></figure></div><p class="note">* Персонажа и обоев в прошивке нет.</p></section>
+<section><h2>Файлы игры</h2><p style="margin:0">В BlueOS <b>нет файлов игры</b>: ни моделей персонажей, ни голосов, ни музыки и обоев из игры. Прошивка полностью работает без них. Свои файлы можно добавить прямо на телефоне («Обои и стиль» → «Персонаж» → «Файлы персонажа»). Где их взять: ссылка в описании TikTok-профиля автора, <a href="https://www.tiktok.com/@chozadaun">tiktok.com/@chozadaun</a>.</p></section>
+<section><h2>Вопросы</h2><details><summary>Это BlueOS от vivo или от Blue Robotics?</summary><p>Нет. Эта BlueOS — фанатская прошивка для Android от GDmio, вдохновлённая игрой Blue Archive. С теми проектами у неё только общее название.</p></details><details><summary>Это официальная прошивка Blue Archive?</summary><p>Нет. Это неофициальный фанатский проект, он не связан с Nexon, Yostar и NEXON Games.</p></details><details><summary>Google Play есть?</summary><p>Да, сервисы Google (MindTheGapps) встроены.</p></details><details><summary>Это бесплатно?</summary><p>Да. Прошивка и исходники бесплатны, лицензия — в репозитории.</p></details><details><summary>Где новости и новые версии?</summary><p>В Telegram-канале <a href="https://t.me/BlueOSfirmware">t.me/BlueOSfirmware</a> и на <a href="https://github.com/GDmio/BlueOS/releases">странице релизов</a>.</p></details></section>
+<p class="warn">⚠️ Без гарантий. Установка любой кастомной прошивки стирает телефон и требует разблокированного загрузчика. Часть приложений может не работать (оплата телефоном, некоторые банки).</p>
+<footer>BlueOS от GDmio · на основе LineageOS · не связана с Nexon, Yostar и NEXON Games.</footer>
+</main>
+</body>
+</html>
