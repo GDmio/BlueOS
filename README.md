@@ -59,6 +59,7 @@ interface in Russian; BlueOS is in English too.</sub>
 | Your phone isn't listed / what to adjust for another screen | [PORTING.md](PORTING.md) |
 | Bring back the character and sounds (on the phone, no build) | [ASSETS.md](ASSETS.md) |
 | Build with an AI coding agent (Claude Code and others) | [AGENTS.md](AGENTS.md) |
+| People who supported and helped BlueOS | [THANKS.md](THANKS.md) |
 
 Every guide is in English and in Russian: the Russian version sits next to it as `*.ru.md`, and each page has a
 language switch at the top.

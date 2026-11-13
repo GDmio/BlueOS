@@ -1,0 +1,47 @@
+{
+  "people": [
+    {
+      "name": "@Bzdyak",
+      "kind": "donate",
+      "ru": "Донатер, активный участник группы",
+      "en": "Donor, active member of the group",
+      "link": "https://t.me/Bzdyak"
+    },
+    {
+      "name": "@lsd4me",
+      "kind": "help",
+      "ru": "Админ, помощник, тестер",
+      "en": "Admin, helper, tester",
+      "link": "https://t.me/lsd4me"
+    },
+    {
+      "name": "@imperklyde",
+      "kind": "help",
+      "ru": "Админ, помощник, тестер",
+      "en": "Admin, helper, tester",
+      "link": "https://t.me/imperklyde"
+    },
+    {
+      "name": "@phantom1ch",
+      "kind": "help",
+      "ru": "Админ, помощник, тестер",
+      "en": "Admin, helper, tester",
+      "link": "https://t.me/phantom1ch"
+    },
+    {
+      "name": "@neon_bit",
+      "kind": "help",
+      "ru": "Лучший друг",
+      "en": "Best friend",
+      "link": "https://t.me/neon_bit"
+    },
+    {
+      "name": "Claude",
+      "kind": "help",
+      "ru": "Просто лучший",
+      "en": "Simply the best",
+      "link": "https://claude.ai/new"
+    }
+  ],
+  "donate": null
+}
