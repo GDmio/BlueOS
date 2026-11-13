@@ -29,8 +29,8 @@ the same chip ([ports/r8q](ports/r8q/README.md)).
 - **Don't lock the bootloader while BlueOS is installed**: the phone will stop booting. The unlocked-bootloader
   warning on every boot is normal and can't be removed.
 - **This build has no Blue Archive character or sounds.** Everything else works. You can add the game files right
-  on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the link
-  in the description of the author's TikTok profile, [tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun).
+  on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the posts in the BlueOS Telegram channel,
+  [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), or put them together yourself from the game.
 - **Google Play is included** (MindTheGapps).
 
 ## What to download

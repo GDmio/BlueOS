@@ -21,8 +21,8 @@ BlueOS yourself (that is why these sources are public) or try the experimental G
 > files here**: the sources do not include the characters' models, their voices, or the game's music, sounds and
 > wallpapers. The ROM works fully without them, just without the character and those sounds. You can add the game
 > files **right on the phone**, no build needed: Wallpaper & style → Character → Character files
-> ([ASSETS.md](ASSETS.md)). Where to get them: the link in the description of the author's TikTok profile,
-> [tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun).
+> ([ASSETS.md](ASSETS.md)). Where to get them: the posts in the BlueOS Telegram channel,
+> [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), or put them together yourself from the game.
 
 > ⚠️ **No warranty.** Installing any custom ROM wipes the phone and needs an unlocked bootloader. Some apps may not
 > work (tap to pay, some banking apps). Use it at your own risk. Details: [INSTALL.md](INSTALL.md), section

@@ -48,8 +48,8 @@ for example for sound, brightness or the fingerprint sensor. If one of them help
 - **The kernel, recovery and boot logo** stay from your firmware: the GSI doesn't change them.
 
 Google Play is included (MindTheGapps). The image has no Blue Archive characters or sounds; you can add the game files
-right on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the
-link in the description of the author's TikTok profile, [tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun).
+right on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the posts in the BlueOS Telegram channel,
+[t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), or put them together yourself from the game.
 
 ## What to download
 | File | What for |

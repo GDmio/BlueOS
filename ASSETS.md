@@ -5,8 +5,7 @@
 The BlueOS sources and ready-made builds have **no files from Blue Archive**: no character models, voices, sounds,
 music or pictures from the game, which belong to Nexon / Yostar. BlueOS works fully without them; only what is made
 from them is missing. You can add the files **right on the phone, without a build**. Where to get them:
-[below](#where-to-get-the-files) and in the description of the author's TikTok profile,
-[tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun). **Don't add these files to this repository, its forks or
+[below](#where-to-get-the-files). **Don't add these files to this repository, its forks or
 Issues.**
 
 ## What you get without the files
@@ -65,8 +64,8 @@ Folders for sounds, wallpapers and animations (missing parts are skipped):
 The exact names of all files BlueOS uses, with sizes and checksums, are in [ASSETS-files.txt](ASSETS-files.txt).
 
 ## Where to get the files
-**The easiest way:** an archive with the files, at the link in the description of the author's TikTok profile,
-[tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun). Download it to the phone and pick it in «Character files»
+**The easiest way:** an archive with the files from the posts in the BlueOS Telegram channel,
+[t.me/BlueOSfirmware](https://t.me/BlueOSfirmware). Download it to the phone and pick it in «Character files»
 (method 1). There are no files in this repository or in the releases.
 
 **Yourself:** these are files of the game itself (Unity): the characters' Spine 4.2 models (`arona_spr`,

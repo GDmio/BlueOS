@@ -19,8 +19,8 @@ build BlueOS yourself ([BUILDING.md](BUILDING.md)).
 - **Some apps may not work:** tap to pay (Google Wallet) and some banking apps and games check that the firmware is
   "factory" (Play Integrity) and refuse to run on BlueOS. Check whether you need them.
 - **This build has no Blue Archive character or sounds.** Everything else works. You can add the game files right
-  on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the link
-  in the description of the author's TikTok profile, [tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun).
+  on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the posts in the BlueOS Telegram channel,
+  [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), or put them together yourself from the game.
 - **Google Play is included** (MindTheGapps).
 - **Updates** install without a wipe, but only builds from this page: they are signed with the same key. A build you
   made yourself is signed with your key, so these updates won't install over it (and the other way round) without

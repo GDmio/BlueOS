@@ -48,8 +48,8 @@ adb shell getprop ro.boot.flash.locked
 - **Ядро, recovery и логотип при включении** остаются от вашей прошивки: GSI их не меняет.
 
 Google Play внутри (MindTheGapps). Персонажей и звуков из Blue Archive в образе нет, файлы игры можно добавить прямо на
-телефоне: «Обои и стиль» → «Персонаж» → «Добавить файлы персонажа» ([ASSETS.ru.md](ASSETS.ru.md)). Где их взять: ссылка в
-описании профиля автора в TikTok — [tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun).
+телефоне: «Обои и стиль» → «Персонаж» → «Добавить файлы персонажа» ([ASSETS.ru.md](ASSETS.ru.md)). Где их взять: в постах Telegram-канала BlueOS —
+[t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), или собрать самому из файлов игры.
 
 ## Что скачать
 | Файл | Зачем |

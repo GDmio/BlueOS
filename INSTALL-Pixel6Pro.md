@@ -18,8 +18,8 @@ Testers checked the build on their own Pixel 6 Pro: it boots and works. If you f
   **Don't lock the bootloader while BlueOS is installed**: the phone will stop booting.
 - **Some apps may not work:** tap to pay (Google Wallet), some banking apps and games.
 - **This build has no Blue Archive character or sounds.** Everything else works. You can add the game files right
-  on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the link
-  in the description of the author's TikTok profile, [tiktok.com/@chozadaun](https://www.tiktok.com/@chozadaun).
+  on the phone: Wallpaper & style → Character → Character files ([ASSETS.md](ASSETS.md)). Where to get them: the posts in the BlueOS Telegram channel,
+  [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), or put them together yourself from the game.
 - **Google Play is included** (MindTheGapps).
 - A carrier-locked phone can't unlock its bootloader, and then BlueOS can't be installed.
 
