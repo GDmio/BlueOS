@@ -7,10 +7,13 @@ BlueOS делает один человек в свободное время. Э
 ## Поддержали проект
 
 - **[@Bzdyak](https://t.me/Bzdyak)** — Донатер, активный участник группы
+- **[@lsd4me](https://t.me/lsd4me)** — Админ, помощник, тестер, донатер
+- **[@Vakinge](https://t.me/Vakinge)** — Донатер
+- **[@userdomkpat](https://t.me/userdomkpat)** — Донатер
+- **[@Jklomlsf](https://t.me/Jklomlsf)** — Донатер
 
 ## Помогли
 
-- **[@lsd4me](https://t.me/lsd4me)** — Админ, помощник, тестер
 - **[@imperklyde](https://t.me/imperklyde)** — Админ, помощник, тестер
 - **[@phantom1ch](https://t.me/phantom1ch)** — Админ, помощник, тестер
 - **[@neon_bit](https://t.me/neon_bit)** — Лучший друг

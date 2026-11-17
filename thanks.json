@@ -9,10 +9,31 @@
     },
     {
       "name": "@lsd4me",
-      "kind": "help",
-      "ru": "Админ, помощник, тестер",
-      "en": "Admin, helper, tester",
+      "kind": "donate",
+      "ru": "Админ, помощник, тестер, донатер",
+      "en": "Admin, helper, tester, donor",
       "link": "https://t.me/lsd4me"
+    },
+    {
+      "name": "@Vakinge",
+      "kind": "donate",
+      "ru": "Донатер",
+      "en": "Donor",
+      "link": "https://t.me/Vakinge"
+    },
+    {
+      "name": "@userdomkpat",
+      "kind": "donate",
+      "ru": "Донатер",
+      "en": "Donor",
+      "link": "https://t.me/userdomkpat"
+    },
+    {
+      "name": "@Jklomlsf",
+      "kind": "donate",
+      "ru": "Донатер",
+      "en": "Donor",
+      "link": "https://t.me/Jklomlsf"
     },
     {
       "name": "@imperklyde",

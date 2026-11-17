@@ -7,10 +7,13 @@ BlueOS is made by one person in their free time. These people supported it or he
 ## Supported the project
 
 - **[@Bzdyak](https://t.me/Bzdyak)** — Donor, active member of the group
+- **[@lsd4me](https://t.me/lsd4me)** — Admin, helper, tester, donor
+- **[@Vakinge](https://t.me/Vakinge)** — Donor
+- **[@userdomkpat](https://t.me/userdomkpat)** — Donor
+- **[@Jklomlsf](https://t.me/Jklomlsf)** — Donor
 
 ## Helped
 
-- **[@lsd4me](https://t.me/lsd4me)** — Admin, helper, tester
 - **[@imperklyde](https://t.me/imperklyde)** — Admin, helper, tester
 - **[@phantom1ch](https://t.me/phantom1ch)** — Admin, helper, tester
 - **[@neon_bit](https://t.me/neon_bit)** — Best friend
