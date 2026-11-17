@@ -25,6 +25,14 @@ Issues.**
    checked ones (usually another version of the game). Tap **«Restart the phone»**: after the restart the character
    appears. The «Character» widget is in the home screen's widget list.
 
+### Chibis, lobbies and wallpapers in 0.9.0
+
+After you choose a folder or archive, **What to add** lets you select categories or individual characters. Tap **Add** and restart if BlueOS asks you to.
+
+- **Chibis.** The importer recognises skinned `.glb` models with café animations. Open **Wallpaper & style → Chibis** to choose the characters to show.
+- **Lobbies.** Each scene needs its Spine `.skel` and `.atlas` files and the textures referenced by the atlas. Choose a scene in **Wallpaper & style → Lobby**. On the lock screen, swipe right from the left edge to open the lobby.
+- **Wallpapers.** Place images in a folder named `Wallpaper` inside the selected folder or archive. Added images appear in the **BlueOS** wallpaper category.
+
 What the import finds:
 - **models**: by the names `arona_spr.*` (Arona) and `NP0035_spr.*` (Plana); names as Unity unpacks them work too:
   `arona_spr.skel.bytes`, `arona_spr.atlas.txt`;

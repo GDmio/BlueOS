@@ -2,72 +2,56 @@
 
 **English** | [Русский](README.ru.md)
 
-A fan-made Android ROM based on **LineageOS 24.0 (Android 17)** and inspired by **Blue Archive**. It has:
+BlueOS is a fan-made Android ROM inspired by **Blue Archive**, based on **LineageOS 24.0 (Android 17)**.
+It is developed on the **Google Pixel 6a**. The 0.9.0 builds include Google Play.
 
-- its own logo and boot animation;
-- a live halo on the lock-screen clock;
-- live widgets;
-- «Colors», where every detail takes its colour from the wallpaper according to its role;
-- live weather and a music equalizer drawn right on the wallpaper;
-- a live character on the lock screen and in a widget, an interactive lock-screen lobby, and 3D chibis on the home screen (add your own character files).
+## Download BlueOS
 
-BlueOS is developed on the **Google Pixel 6a (`bluejay`)**. Ready-made builds also exist for the **Pixel 6**,
-**Pixel 6 Pro**, **Galaxy S20 FE (Snapdragon)** and **POCO X3 Pro**. For other phones you can build
-BlueOS yourself (that is why these sources are public) or try the experimental GSI ([GSI.md](GSI.md)).
+| Device | Latest build | Instructions |
+| --- | --- | --- |
+| **Google Pixel 6a** (`bluejay`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0) · main release | [Install](https://github.com/GDmio/BlueOS/releases/download/v0.9.0/INSTALL.md) |
+| **Samsung Galaxy S20 FE Snapdragon** (`r8q`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-r8q) | [Install](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-r8q/INSTALL-S20FE.md) |
+| **POCO X3 Pro** (`vayu`, `bhima`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-vayu) | [Install](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-vayu/INSTALL-POCOX3Pro.md) |
+| **TrebleDroid GSI** (`arm64_bvN4`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-gsi-treble) · experimental | [DSU guide](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-gsi-treble/GSI.md) |
+| **Google Pixel 6** (`oriole`) | [0.8.1](https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-oriole) | [Install](INSTALL-Pixel6.md) |
+| **Google Pixel 6 Pro** (`raven`) | [0.8.1](https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-raven) | [Install](INSTALL-Pixel6Pro.md) |
 
-📣 **News and new versions: the Telegram channel [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware).**
+The 0.9.0 GSI was tested through DSU on a Pixel 6a. Compatibility varies by device.
+Follow the guide for your model and back up your data before installing. Unlocking the bootloader and formatting erase user data.
 
-> BlueOS is an unofficial fan project. It is not affiliated with Nexon, Yostar or NEXON Games. **There are no game
-> files here**: the sources do not include the characters' models, their voices, or the game's music, sounds and
-> wallpapers. The ROM works fully without them, just without the character and those sounds. You can add the game
-> files **right on the phone**, no build needed: Wallpaper & style → Character → Character files
-> ([ASSETS.md](ASSETS.md)). Where to get them: the posts in the BlueOS Telegram channel,
-> [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), or put them together yourself from the game.
+## What's new in 0.9.0
 
-> ⚠️ **No warranty.** Installing any custom ROM wipes the phone and needs an unlocked bootloader. Some apps may not
-> work (tap to pay, some banking apps). Use it at your own risk. Details: [INSTALL.md](INSTALL.md), section
-> «Read before you start».
+- **3D chibis on the home screen.** They react to touch, move around the screen and interact with widgets.
+- **Interactive lobby.** Swipe right from the left edge of the lock screen. Testing covered 279 scenes.
+- **Wallpaper jelly.** Selected areas of the wallpaper respond to phone motion and touch.
+- **Calendar and wallpapers.** Added a month-view widget and wallpaper import on the phone.
+- **Fixes and performance.** Widget blur survives a return from Recents. Live wallpapers and weather use fewer resources while swiping.
 
-## What it looks like
+## Screenshots
+
 <table>
 <tr>
-<td align="center" width="25%"><img src="docs/screenshots/lock-plana.jpg" alt="Plana and the live clock*"><br><sub>Plana and the live clock*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/home-widgets.jpg" alt="Widgets and the equalizer"><br><sub>Widgets and the equalizer</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/lock-arona.jpg" alt="Arona on the lock screen*"><br><sub>Arona on the lock screen*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/home-plana.jpg" alt="Plana in the widget*"><br><sub>Plana in the widget*</sub></td>
-</tr>
-<tr>
-<td align="center" width="25%"><img src="docs/screenshots/lock-moe.jpg" alt="Moe pixel clock*"><br><sub>Moe pixel clock*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/home-arona.jpg" alt="Arona at her desk*"><br><sub>Arona at her desk*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/about.jpg" alt="About phone"><br><sub>About phone</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/home-chibi.jpg" alt="3D chibi and widgets"><br><sub>3D chibi and widgets</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/lobby.jpg" alt="Lock-screen lobby"><br><sub>Lock-screen lobby</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/lock-moe.jpg" alt="Moe clock"><br><sub>Moe clock</sub></td>
 </tr>
 </table>
 
-<sub>* The characters and their voices appear only after you add your own files. They are not part of the ROM, and
-neither are the wallpapers in these screenshots (except the stock LineageOS ones). Taken on a Pixel 6a with the
-interface in Russian; BlueOS is in English too.</sub>
+<sub>Captured on a Pixel 6a. Characters, scenes and custom wallpapers were added separately.</sub>
 
-## Where to start
-| What you need | Where |
-|---|---|
-| **Install ready-made BlueOS on a Pixel 6a** | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0) + [installation guide](https://github.com/GDmio/BlueOS/releases/download/v0.9.0/INSTALL.md) |
-| **Install on a Pixel 6** | **Releases** (`v0.8.1-oriole`) + [INSTALL-Pixel6.md](INSTALL-Pixel6.md) |
-| **Install on a Pixel 6 Pro** | **Releases** (`v0.8.1-raven`) + [INSTALL-Pixel6Pro.md](INSTALL-Pixel6Pro.md) |
-| **Install on a Galaxy S20 FE (Snapdragon)** | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-r8q) + [installation guide](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-r8q/INSTALL-S20FE.md) |
-| **Install on a POCO X3 Pro** | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-vayu) + [installation guide](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-vayu/INSTALL-POCOX3Pro.md) |
-| **Try it on another phone** (GSI, experimental, checked only on a Pixel 6a) | [0.9.0 GSI](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-gsi-treble) + [GSI and DSU guide](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-gsi-treble/GSI.md) |
-| Build BlueOS for your own phone | [BUILDING.md](BUILDING.md) |
-| Your phone isn't listed / what to adjust for another screen | [PORTING.md](PORTING.md) |
-| Bring back the character and sounds (on the phone, no build) | [ASSETS.md](ASSETS.md) |
-| Build with an AI coding agent (Claude Code and others) | [AGENTS.md](AGENTS.md) |
-| People who supported and helped BlueOS | [THANKS.md](THANKS.md) |
+## Character files
 
-Every guide is in English and in Russian: the Russian version sits next to it as `*.ru.md`, and each page has a
-language switch at the top.
+Blue Archive models, voices, music and other game files are excluded from the source and builds. Import your own files on the phone through **Wallpaper & style → Character → Add character files**. [Import guide](ASSETS.md)
 
-**The easiest way is with an agent.** Open the LineageOS source folder in Claude Code (or another agent that reads
-`AGENTS.md`) and say "build BlueOS for my phone". `AGENTS.md` tells the agent what to check, in what order to do
-things and where builds usually break.
+Find updates and files for import in the [BlueOS Telegram channel](https://t.me/BlueOSfirmware).
+BlueOS is an unofficial fan project and is unaffiliated with Nexon, Yostar or NEXON Games.
+
+## Source and documentation
+
+- [BlueOS 0.9.0 source](https://github.com/GDmio/BlueOS/tree/v0.9.0)
+- [Build BlueOS](BUILDING.md) and [port it to another device](PORTING.md)
+- [Guide for AI coding agents](AGENTS.md)
+- [Acknowledgements](THANKS.md)
 
 ## What's inside
 - `config/blueos.mk` — everything that hooks BlueOS into the build (one line in `vendor/extra/product.mk`).

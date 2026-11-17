@@ -3,17 +3,14 @@
 **English** | [Русский](GSI.ru.md)
 
 A GSI is one system image that can run on many Android phones: it replaces only the system itself, and everything
-that belongs to the hardware stays from the phone's own firmware. The file is on the **Releases** page, in the
-`v0.8.1-gsi-treble` release.
+that belongs to the hardware stays from the phone's own firmware. The experimental image is available in the [BlueOS 0.9.0 GSI release](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-gsi-treble).
 
 The image is built on **TrebleDroid**: a set of fixes for GSIs that help the system boot and work on phones of
 different brands. The previous image (`v0.8.1-gsi`) didn't have them, and for testers it hung on boot and the camera
 and fingerprint didn't work.
 
 ## ⚠️ Read before you start
-- **Checked on one phone only:** a Pixel 6a, started through DSU (method 1). There boot, Wi-Fi, mobile data, sound,
-  camera, fingerprint, Google Play and adding the character files work. On other phones it may not boot or may work
-  only partly.
+- **0.9.0 test build.** Installed through DSU on a Pixel 6a. The owner confirmed it booted and worked during their test.
 - **Unofficial fan ROM, no warranty of any kind.** Everything is at your own risk. Report bugs here (Issues), not to
   LineageOS or TrebleDroid.
 - **Find the stock firmware for your exact phone beforehand and learn how to flash it.** That is the only way back.
@@ -54,10 +51,10 @@ right on the phone: Wallpaper & style → Character → Character files ([ASSETS
 ## What to download
 | File | What for |
 |---|---|
-| `BlueOS-0.8.1-gsi_arm64_bvN4-20261107-2.img.gz` | the image itself: 1.7 GB, 3.5 GB unpacked |
+| `BlueOS-0.9.0-gsi_arm64_bvN4-20261117.img.gz` | the image itself: 1.8 GB, 3.5 GB unpacked |
 | `SHA256SUMS` | the checksum, to check that the file downloaded completely |
 
-Check: Windows (PowerShell) `Get-FileHash .\BlueOS-0.8.1-gsi_arm64_bvN4-20261107-2.img.gz`, Linux/macOS
+Check: Windows (PowerShell) `Get-FileHash .\BlueOS-0.9.0-gsi_arm64_bvN4-20261117.img.gz`, Linux/macOS
 `sha256sum -c SHA256SUMS`. The sums must match.
 
 You'll need a computer, a cable and [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools)
@@ -67,7 +64,7 @@ You'll need a computer, a cable and [Android SDK Platform-Tools](https://develop
 The GSI runs next to your system, and your data stays. The next reboot takes the phone back to its usual system.
 You **don't need** to unpack the file.
 
-You need an unlocked bootloader and **about 25 GB of free space** in the phone's storage: 1.7 GB for the file itself,
+You need an unlocked bootloader and **about 25 GB of free space** in the phone's storage: 1.8 GB for the file itself,
 3.5 GB for the system, 8 GB for the GSI's data, and on most newer phones Android also wants a reserve the size of the
 phone's system partition (usually 8–14 GB). With less space the install ends with an error. You can get by with less:
 in the last command, replace `8589934592` (8 GB for the GSI's data) with `4294967296` (4 GB).
@@ -75,19 +72,15 @@ in the last command, replace `8589934592` (8 GB for the GSI's data) with `429496
 Run the commands in the folder where the downloaded file is (or give the full path to it).
 
 ```
-adb push BlueOS-0.8.1-gsi_arm64_bvN4-20261107-2.img.gz /sdcard/Download/blueos_gsi.img.gz
+adb push BlueOS-0.9.0-gsi_arm64_bvN4-20261117.img.gz /sdcard/Download/blueos_gsi.img.gz
 adb shell setprop persist.sys.fflag.override.settings_dynamic_system true
-adb shell am start-activity -n com.android.dynsystem/com.android.dynsystem.VerificationActivity -a android.os.image.action.START_INSTALL -d file:///storage/emulated/0/Download/blueos_gsi.img.gz --el KEY_SYSTEM_SIZE 3512172544 --el KEY_USERDATA_SIZE 8589934592
+adb shell am start-activity -n com.android.dynsystem/com.android.dynsystem.VerificationActivity -a android.os.image.action.START_INSTALL -d file:///storage/emulated/0/Download/blueos_gsi.img.gz --el KEY_SYSTEM_SIZE 3519737856 --el KEY_USERDATA_SIZE 8589934592 --ez KEY_ENABLE_WHEN_COMPLETED true --ez KEY_ONE_SHOT true
 ```
 The number after `KEY_SYSTEM_SIZE` is the exact size of the unpacked image in bytes, and every image has its own.
 With a different number the install ends with an error, so copy the command from this guide for the image you
 downloaded.
 
-A notification shows the install progress. When it finishes, reboot the phone into the GSI with the button in that
-notification. The same notification has a button that removes the installed image.
-
-*On the Pixel 6a the install was checked with these commands, and the reboot into the GSI was done with `gsi_tool` as
-root. We didn't check the button in the notification.*
+Confirm the installation on your phone if prompted for your screen-lock PIN. The notification shows progress. The command reboots into the GSI once installation completes. Reboot again to return to your usual system.
 
 The GSI has its own, separate data: you'll get the first setup again, and you'll have to turn on USB debugging once
 more.
@@ -123,7 +116,7 @@ Attach `bugreport.zip` to your message in Issues. Keep in mind that the report h
 **This method hasn't been checked on a real phone.** It is the usual way to install an Android GSI, but some phones
 need steps of their own. Try method 1 first.
 
-1. Unpack the `.img.gz` (Windows: 7-Zip, Linux/macOS: `gunzip`) to get `BlueOS-0.8.1-gsi_arm64_bvN4-20261107-2.img`.
+1. Unpack the `.img.gz` (Windows: 7-Zip, Linux/macOS: `gunzip`) to get `BlueOS-0.9.0-gsi_arm64_bvN4-20261117.img`.
 2. Take the `vbmeta.img` file from your phone's stock firmware and turn off the system check:
 ```
 adb reboot bootloader
@@ -132,7 +125,7 @@ fastboot flash --disable-verity --disable-verification vbmeta vbmeta.img
 3. Flash the image and erase the data:
 ```
 fastboot reboot fastboot
-fastboot flash system BlueOS-0.8.1-gsi_arm64_bvN4-20261107-2.img
+fastboot flash system BlueOS-0.9.0-gsi_arm64_bvN4-20261117.img
 fastboot -w
 fastboot reboot
 ```

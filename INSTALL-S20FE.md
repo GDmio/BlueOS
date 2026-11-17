@@ -2,6 +2,8 @@
 
 **English** | [Русский](INSTALL-S20FE.ru.md)
 
+> [BlueOS 0.9.0 installation guide](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-r8q/INSTALL-S20FE.md). The steps below are for **0.8.1**.
+
 This guide and this zip are **only for the Galaxy S20 FE with a Snapdragon 865** (codename `r8q`); the build is on the
 **Releases** page (`v0.8.1-r8q`). Testers checked the build on their own S20 FE: it boots and works. If you find a
 bug, open an Issue.

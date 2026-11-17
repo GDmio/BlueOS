@@ -2,67 +2,56 @@
 
 [English](README.md) | **Русский**
 
-Фанатская прошивка на основе **LineageOS 24.0 (Android 17)**, вдохновлённая **Blue Archive**. В ней есть:
+BlueOS — фанатская прошивка в стиле **Blue Archive** на базе **LineageOS 24.0 (Android 17)**.
+Разрабатывается на **Google Pixel 6a**. В сборках 0.9.0 есть Google Play.
 
-- свой логотип и анимация загрузки;
-- живой нимб на часах экрана блокировки;
-- живые виджеты;
-- «Цвета», где каждая деталь берёт цвет из обоев по своей роли;
-- живая погода и эквалайзер прямо на обоях;
-- живой персонаж в виджете и на экране блокировки, интерактивное лобби и 3D-чиби на рабочем столе (нужны свои файлы персонажей).
+## Скачать BlueOS
 
-BlueOS разрабатывается на **Google Pixel 6a (`bluejay`)**. Готовые сборки есть ещё для **Pixel 6**, **Pixel 6 Pro**,
-**Galaxy S20 FE на Snapdragon** и **POCO X3 Pro**. Под другие телефоны BlueOS можно собрать самому (для этого
-исходники и выложены) или попробовать экспериментальный GSI ([GSI.ru.md](GSI.ru.md)).
+| Устройство | Последняя сборка | Инструкция |
+| --- | --- | --- |
+| **Google Pixel 6a** (`bluejay`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0) · основной релиз | [Установка](https://github.com/GDmio/BlueOS/releases/download/v0.9.0/INSTALL.ru.md) |
+| **Samsung Galaxy S20 FE Snapdragon** (`r8q`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-r8q) | [Установка](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-r8q/INSTALL-S20FE.ru.md) |
+| **POCO X3 Pro** (`vayu`, `bhima`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-vayu) | [Установка](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-vayu/INSTALL-POCOX3Pro.ru.md) |
+| **TrebleDroid GSI** (`arm64_bvN4`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-gsi-treble) · экспериментальная | [Инструкция по DSU](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-gsi-treble/GSI.ru.md) |
+| **Google Pixel 6** (`oriole`) | [0.8.1](https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-oriole) | [Установка](INSTALL-Pixel6.ru.md) |
+| **Google Pixel 6 Pro** (`raven`) | [0.8.1](https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-raven) | [Установка](INSTALL-Pixel6Pro.ru.md) |
 
-📣 **Новости и новые версии: Telegram-канал [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware).**
+GSI 0.9.0 проверили через DSU на Pixel 6a. Совместимость с другими телефонами зависит от устройства.
+Перед установкой выберите инструкцию для своей модели и сделайте резервную копию. При разблокировке загрузчика и форматировании данные стираются.
 
-> BlueOS — неофициальный фанатский проект. Он не связан с Nexon, Yostar и NEXON Games. **Файлов из игры здесь нет**:
-> в исходники не входят модели персонажей, их голоса, музыка, звуки и обои из игры. Без них прошивка полностью
-> работает, просто без персонажа и этих звуков. Файлы игры можно добавить **прямо на телефоне**, без сборки:
-> «Обои и стиль» → «Персонаж» → «Файлы персонажа» ([ASSETS.ru.md](ASSETS.ru.md)). Где их взять: в постах Telegram-канала BlueOS —
-> [t.me/BlueOSfirmware](https://t.me/BlueOSfirmware), или собрать самому из файлов игры.
+## Что нового в 0.9.0
 
-> ⚠️ **Без гарантий.** Установка любой прошивки стирает телефон и требует разблокированного загрузчика. Часть
-> приложений может не работать (оплата телефоном, некоторые банки). Всё на ваш страх и риск. Подробно:
-> [INSTALL.ru.md](INSTALL.ru.md), раздел «Прочитайте до начала».
+- **3D-чиби на рабочем столе.** Реагируют на касания, двигаются по экрану и взаимодействуют с виджетами.
+- **Интерактивное лобби.** На экране блокировки смахните вправо от левого края. При тестировании проверили 279 сцен.
+- **Желе на обоях.** Выбранные участки обоев реагируют на движение телефона и касания.
+- **Календарь и обои.** Добавили виджет месяца и импорт обоев с телефона.
+- **Исправления и оптимизация.** Размытие виджетов сохраняется после возврата из «Недавних», живые обои и погода требуют меньше ресурсов при пролистывании.
 
 ## Как это выглядит
+
 <table>
 <tr>
-<td align="center" width="25%"><img src="docs/screenshots/lock-plana.jpg" alt="Плана и живые часы*"><br><sub>Плана и живые часы*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/home-widgets.jpg" alt="Виджеты и эквалайзер"><br><sub>Виджеты и эквалайзер</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/lock-arona.jpg" alt="Арона на экране блокировки*"><br><sub>Арона на экране блокировки*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/home-plana.jpg" alt="Плана в виджете*"><br><sub>Плана в виджете*</sub></td>
-</tr>
-<tr>
-<td align="center" width="25%"><img src="docs/screenshots/lock-moe.jpg" alt="Пиксельные часы Moe*"><br><sub>Пиксельные часы Moe*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/home-arona.jpg" alt="Арона за партой*"><br><sub>Арона за партой*</sub></td>
-<td align="center" width="25%"><img src="docs/screenshots/about.jpg" alt="О телефоне"><br><sub>О телефоне</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/home-chibi.jpg" alt="3D-чиби и виджеты"><br><sub>3D-чиби и виджеты</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/lobby.jpg" alt="Лобби на экране блокировки"><br><sub>Лобби на экране блокировки</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/lock-moe.jpg" alt="Часы Moe"><br><sub>Часы Moe</sub></td>
 </tr>
 </table>
 
-<sub>* Персонажи и их голоса появляются, только если добавить свои файлы. В прошивку они не входят, как и обои с этих
-скриншотов (кроме стандартных LineageOS). Снято на Pixel 6a.</sub>
+<sub>Снимки с Pixel 6a. Персонажи, сцены и пользовательские обои добавлены отдельно.</sub>
 
-## С чего начать
-| Что нужно | Где |
-|---|---|
-| **Поставить готовую BlueOS на Pixel 6a** | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0) + [инструкция](https://github.com/GDmio/BlueOS/releases/download/v0.9.0/INSTALL.ru.md) |
-| **Поставить на Pixel 6** | **Releases** (`v0.8.1-oriole`) + [INSTALL-Pixel6.ru.md](INSTALL-Pixel6.ru.md) |
-| **Поставить на Pixel 6 Pro** | **Releases** (`v0.8.1-raven`) + [INSTALL-Pixel6Pro.ru.md](INSTALL-Pixel6Pro.ru.md) |
-| **Поставить на Galaxy S20 FE (Snapdragon)** | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-r8q) + [инструкция](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-r8q/INSTALL-S20FE.ru.md) |
-| **Поставить на POCO X3 Pro** | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-vayu) + [инструкция](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-vayu/INSTALL-POCOX3Pro.ru.md) |
-| **Попробовать на другом телефоне** (GSI, экспериментально, проверен только на Pixel 6a) | [0.9.0 GSI](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-gsi-treble) + [инструкция по GSI и DSU](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-gsi-treble/GSI.ru.md) |
-| Собрать BlueOS под свой телефон | [BUILDING.ru.md](BUILDING.ru.md) |
-| Телефона нет в списке / что подстроить под другой экран | [PORTING.ru.md](PORTING.ru.md) |
-| Вернуть персонажа и звуки (на телефоне, без сборки) | [ASSETS.ru.md](ASSETS.ru.md) |
-| Собирать с помощью ИИ-агента (Claude Code и др.) | [AGENTS.md](AGENTS.md) |
-| Люди, которые поддержали BlueOS и помогли ему | [THANKS.ru.md](THANKS.ru.md) |
+## Файлы персонажа
 
-**Проще всего с агентом.** Откройте папку с исходниками LineageOS в Claude Code (или другом агенте, который читает
-`AGENTS.md`) и скажите: «собери BlueOS для моего телефона». В `AGENTS.md` описано, что агенту проверить, в каком
-порядке всё делать и где сборка обычно ломается.
+Модели, голоса, музыка и другие файлы Blue Archive в сборки и исходники не входят. Свои файлы можно добавить прямо на телефоне через **«Обои и стиль» → «Персонаж» → «Добавить файлы персонажа»**. [Инструкция по импорту](ASSETS.ru.md)
+
+Обновления и материалы для импорта опубликованы в [Telegram-канале BlueOS](https://t.me/BlueOSfirmware).
+BlueOS — неофициальный фанатский проект, который не связан с Nexon, Yostar или NEXON Games.
+
+## Исходники и документация
+
+- [Исходники BlueOS 0.9.0](https://github.com/GDmio/BlueOS/tree/v0.9.0)
+- [Сборка BlueOS](BUILDING.ru.md) и [портирование на другое устройство](PORTING.ru.md)
+- [Руководство для ИИ-агента](AGENTS.md)
+- [Благодарности](THANKS.ru.md)
 
 ## Что внутри
 - `config/blueos.mk` — всё подключение BlueOS к сборке (одна строка в `vendor/extra/product.mk`).
