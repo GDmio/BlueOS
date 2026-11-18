@@ -13,8 +13,12 @@ It is developed on the **Google Pixel 6a**. The 0.9.0 builds include Google Play
 | **Samsung Galaxy S20 FE Snapdragon** (`r8q`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-r8q) | [Install](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-r8q/INSTALL-S20FE.md) |
 | **POCO X3 Pro** (`vayu`, `bhima`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-vayu) | [Install](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-vayu/INSTALL-POCOX3Pro.md) |
 | **TrebleDroid GSI** (`arm64_bvN4`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-gsi-treble) · experimental | [DSU guide](https://github.com/GDmio/BlueOS/releases/download/v0.9.0-gsi-treble/GSI.md) |
-| **Google Pixel 6** (`oriole`) | [0.8.1](https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-oriole) | [Install](INSTALL-Pixel6.md) |
+| **Google Pixel 6** (`oriole`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-oriole) · test build | [Install](INSTALL-Pixel6-0.9.md) |
+| **Xiaomi Mi 9 Transparent Edition** (`cepheus`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-cepheus) · test build | [Install](INSTALL-Mi9.md) |
+| **OnePlus 9 Pro** (`lemonadep`) | [0.9.0](https://github.com/GDmio/BlueOS/releases/tag/v0.9.0-lemonadep) · test build | [Install](INSTALL-OnePlus9Pro.md) |
 | **Google Pixel 6 Pro** (`raven`) | [0.8.1](https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-raven) | [Install](INSTALL-Pixel6Pro.md) |
+
+First boot on the Pixel 6, Mi 9 Transparent Edition and OnePlus 9 Pro is pending. Pixel 6 owners can also download the [device-tested 0.8.1 release](https://github.com/GDmio/BlueOS/releases/tag/v0.8.1-oriole).
 
 The 0.9.0 GSI was tested through DSU on a Pixel 6a. Compatibility varies by device.
 Follow the guide for your model and back up your data before installing. Unlocking the bootloader and formatting erase user data.
